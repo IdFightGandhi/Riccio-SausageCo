@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import { IconContext } from 'react-icons/lib'
+import { IconContext } from 'react-icons/lib';
+import { Button } from '../../globalStyles';
 import { 
     Nav, 
     NavbarContainer, 
@@ -9,13 +10,29 @@ import {
     MobileIcon,
     NavMenu,
     NavItem,
-    NavLinks
+    NavLinks,
+    NavItemBtn,
+    NavBtnLink
  } from './Navbar.elements';
 
 const Navbar = () => {
     const [click, setClick] = useState(false)
+    const [button, setButton] = useState(true)
 
     const handleClick = () => setClick(!click)
+    const showButton = () => {
+        if(window.innerWidth <= 960) {
+            setButton(false)
+        }else {
+            setButton(true)
+        }
+    }
+
+    useEffect(() => {
+        showButton()
+    }, [])
+
+    window.addEventListener('resize', showButton);
 
     return (
         <>
@@ -36,11 +53,6 @@ const Navbar = () => {
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='/shop'>
-                            Shop Online
-                        </NavLinks>
-                    </NavItem>
-                    <NavItem>
                         <NavLinks to='/findstore'>
                             Stores Near You
                         </NavLinks>
@@ -55,8 +67,20 @@ const Navbar = () => {
                             Contact
                         </NavLinks>
                     </NavItem>
+                    <NavItemBtn>
+                        {button ? (
+                            <NavBtnLink to="/shop">
+                                <Button primary>SHOP ONLINE</Button>
+                            </NavBtnLink>
+                        ): (
+                            <NavBtnLink to="/shop">
+                                <Button fontBig primary>
+                                    SHOP ONLINE
+                                </Button>
+                            </NavBtnLink>
+                        )}
+                    </NavItemBtn>
                 </NavMenu>
-                
             </NavbarContainer>
         </Nav>
         </IconContext.Provider>
