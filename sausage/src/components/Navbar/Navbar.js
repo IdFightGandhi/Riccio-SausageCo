@@ -6,7 +6,10 @@ import {
     NavbarContainer, 
     NavLogo, 
     NavIcon, 
-    MobileIcon
+    MobileIcon,
+    NavMenu,
+    NavItem,
+    NavLinks,
  } from './Navbar.elements';
 
 const Navbar = () => {
@@ -26,7 +29,41 @@ const Navbar = () => {
                 <MobileIcon onClick={handleClick}>
                     {click ? <FaTimes /> : <FaBars />}
                 </MobileIcon>
-
+                <NavMenu onClick={handleClick}>
+                    <NavItem>
+                        <NavLinks to='/'>
+                            Home
+                        </NavLinks>
+                    </NavItem>
+                </NavMenu>
+                <NavMenu onClick={handleClick}>
+                    <NavItem>
+                        <NavLinks to='/'>
+                            Stores Near You
+                        </NavLinks>
+                    </NavItem>
+                </NavMenu>
+                <NavMenu onClick={handleClick}>
+                    <NavItem>
+                        <NavLinks to='/'>
+                            Shop
+                        </NavLinks>
+                    </NavItem>
+                </NavMenu>
+                <NavMenu onClick={handleClick}>
+                    <NavItem>
+                        <NavLinks to='/'>
+                            About Us
+                        </NavLinks>
+                    </NavItem>
+                </NavMenu>
+                <NavMenu onClick={handleClick}>
+                    <NavItem>
+                        <NavLinks to='/'>
+                            Contact
+                        </NavLinks>
+                    </NavItem>
+                </NavMenu>
             </NavbarContainer>
         </Nav>
         </IconContext.Provider>
