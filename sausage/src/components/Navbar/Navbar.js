@@ -9,7 +9,7 @@ import {
     MobileIcon,
     NavMenu,
     NavItem,
-    NavLinks,
+    NavLinks
  } from './Navbar.elements';
 
 const Navbar = () => {
@@ -29,41 +29,34 @@ const Navbar = () => {
                 <MobileIcon onClick={handleClick}>
                     {click ? <FaTimes /> : <FaBars />}
                 </MobileIcon>
-                <NavMenu onClick={handleClick}>
+                <NavMenu onClick={handleClick} click={click}>
                     <NavItem>
                         <NavLinks to='/'>
                             Home
                         </NavLinks>
                     </NavItem>
-                </NavMenu>
-                <NavMenu onClick={handleClick}>
                     <NavItem>
-                        <NavLinks to='/'>
+                        <NavLinks to='/shop'>
+                            Shop Online
+                        </NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks to='/findstore'>
                             Stores Near You
                         </NavLinks>
                     </NavItem>
-                </NavMenu>
-                <NavMenu onClick={handleClick}>
                     <NavItem>
-                        <NavLinks to='/'>
-                            Shop
-                        </NavLinks>
-                    </NavItem>
-                </NavMenu>
-                <NavMenu onClick={handleClick}>
-                    <NavItem>
-                        <NavLinks to='/'>
+                        <NavLinks to='/about'>
                             About Us
                         </NavLinks>
                     </NavItem>
-                </NavMenu>
-                <NavMenu onClick={handleClick}>
                     <NavItem>
-                        <NavLinks to='/'>
+                        <NavLinks to='/contact'>
                             Contact
                         </NavLinks>
                     </NavItem>
                 </NavMenu>
+                
             </NavbarContainer>
         </Nav>
         </IconContext.Provider>
