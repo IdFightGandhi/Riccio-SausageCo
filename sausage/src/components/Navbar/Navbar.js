@@ -36,12 +36,12 @@ const Navbar = () => {
 
     return (
         <>
-        <IconContext.Provider value={{ color: '#fff'}}>
+        <IconContext.Provider value={{ color: '#CB333B'}}>
         <Nav>
             <NavbarContainer>
                 <NavLogo to="/">
                     <NavIcon />
-                    Ricci's Sausage
+                    Riccio's Sausage
                 </NavLogo>
                 <MobileIcon onClick={handleClick}>
                     {click ? <FaTimes /> : <FaBars />}

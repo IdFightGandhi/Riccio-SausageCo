@@ -2,9 +2,10 @@ import styled from 'styled-components'
 import { GiSausage } from "react-icons/gi";
 import { Link } from 'react-router-dom';
 import { Container } from '../../globalStyles'
+import Logo from '../../assets/Logo.png'
 
 export const Nav = styled.nav`
-background: #CB333B;
+background: #fff;
 height: 80px;
 display: flex;
 justify-content: center;
@@ -23,13 +24,14 @@ ${Container}
 `;
 
 export const NavLogo = styled(Link)`
-color: #fff;
+color: #CB333B;
 justify-self: flex-start;
 cursor: pointer;
 text-decoration: none;
 font-size: 2rem;
 display: flex;
 align-items: center;
+
 `
 
 export const NavIcon = styled(GiSausage)`
@@ -90,7 +92,7 @@ border-bottom: 2px solid transparent;
 `
 
 export const NavLinks = styled(Link)`
-color: #fff;
+color: #CB333B;
 display: flex;
 align-items: center;
 text-decoration: none;

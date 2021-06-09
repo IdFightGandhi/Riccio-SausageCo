@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const About = styled.div`
 color:#fff;
 padding: 160px 0;
-background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')};
+background: ${({ lightBg }) => (lightBg ? '#fff' : '#008c45')};
 `;
 
 export const AboutRow = styled.div `
