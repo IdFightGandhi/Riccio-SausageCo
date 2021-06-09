@@ -40,3 +40,27 @@ padding-bottom: 60px;
     padding-bottom: 65px;
 }
 `
+
+export const topLine = styled.div`
+color:${({lightTopLine}) => (lightTopLine ? '#a9b3c1' : '#4b59f7')};
+font-size: 18px;
+line-height: 16px;
+font-weight: 700;
+letter-spacing: 1.4px;
+margin-bottom: 16px;
+`;
+
+export const Heading = styled.h1`
+margin-bottom: 24px;
+font-size: 48px;
+line-height: 1.1;
+color: ${({lightText}) => (lightText ? '#f77f8fa' : '#1c2237')};
+`;
+
+export const Subtitle = styled.p`
+max-width: 440px;
+margin-bottom: 35px;
+font-size: 18px;
+line-height: 24px;
+color: ${({lightTextDesc}) => (lightTextDesc ? '#a9b3c1' : '#1c2237')};
+`;

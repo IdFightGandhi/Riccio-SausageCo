@@ -1,8 +1,29 @@
 import React from 'react'
-import { About, AboutRow, AboutColumn, TextWrapper } from './AboutSection.elements'
-import { Container } from '../../globalStyles'
+import { Container, Button } from '../../globalStyles'
+import { Link } from 'react-router-dom'
+import { 
+    About, 
+    AboutRow, 
+    AboutColumn, 
+    TextWrapper, 
+    topLine,
+    Heading,
+    Subtitle
 
-const AboutSection = ({ lightBg, imgStart }) => {
+} from './AboutSection.elements'
+
+
+const AboutSection = ({ 
+    primary,
+    lightBg, 
+    imgStart, 
+    lightTopLine, 
+    lightTextDesc, 
+    buttonLabel, 
+    description, 
+    headline, 
+    lightText, 
+    topLine  }) => {
     return (
         <>
         <About lightBg={lightBg}>
@@ -10,7 +31,14 @@ const AboutSection = ({ lightBg, imgStart }) => {
                 <AboutRow imgStart={imgStart}>
                     <AboutColumn>
                         <TextWrapper>
-                            Hi
+                            <topLine lightTopLine={lightTopLine}>{topLine}</topLine>
+                            <Heading lightText={lightText}>{headline}</Heading>
+                            <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
+                            <Link to='/shop'>
+                                <Button big fontBig primary={primary}>
+                                {buttonLabel}
+                                </Button>
+                            </Link>
                         </TextWrapper>
                     </AboutColumn>
                 </AboutRow>
