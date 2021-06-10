@@ -2,13 +2,13 @@ import styled from 'styled-components';
 
 export const About = styled.div`
 color:#fff;
-padding: 160px 0;
+padding: 80px 0;
 background: ${({ lightBg }) => (lightBg ? '#fff' : '#008c45')};
 `;
 
 export const AboutRow = styled.div `
 display: flex;
-margin: 0 -15px -15px -15px;
+margin: 0 -10px -10px -10px;
 flex-wrap: wrap;
 align-items: center;
 flex-direction: ${({imgStart}) => (imgStart ? 'row-reverse' : 'row')
@@ -16,9 +16,9 @@ flex-direction: ${({imgStart}) => (imgStart ? 'row-reverse' : 'row')
 `;
 
 export const AboutColumn = styled.div `
-margin-bottom: 15px;
-padding-right: 15px;
-padding-left: 15px;
+margin-bottom: 10px;
+padding-right: 10px;
+padding-left: 10px;
 flex: 1;
 max-width: 50%;
 flex-basis: 50%;
@@ -77,7 +77,7 @@ border: 0;
 max-width: 100%;
 vertical-align: middle;
 display: inline-block;
-max-height: 500px;
+max-height: 400px;
 
 `
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Button } from '../../globalStyles'
 import { Link } from 'react-router-dom'
+import Sausage1 from '../../images/Sausage1.png'
 import { 
     About, 
     AboutRow, 
@@ -51,7 +52,7 @@ const AboutSection = ({
                     </AboutColumn>
                     <AboutColumn>
                         <ImgWrapper start={start}>
-                            <img src='../../images/Sauage1.png' alt='sausage1'/>
+                            <Img src={Sausage1} alt={alt}/>
                         </ImgWrapper>
                     </AboutColumn>
                 </AboutRow>

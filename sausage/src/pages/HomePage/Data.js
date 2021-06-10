@@ -15,19 +15,19 @@ export const homeObjOne = {
 };
 
 export const homeObjTwo = {
-    lightBg: false,
-    primary:true,
-    imgStart:'', 
-    lightTopLine: true, 
-    lightTextDesc: true, 
+    lightBg: true,
+    primary:false,
+    imgStart:'start', 
+    lightTopLine: false, 
+    lightTextDesc: false, 
     buttonLabel: 'Shop Online', 
     description: 'Company Slogan Here', 
     headline: 'Advertising Tag Here', 
     lightText: true, 
     topLine: 'Sausage',
-    img:require('../../images/Sausage1.png'),
+    img:('../../images/Sausage1.png'),
     alt:'Image',
-    start: ''
+    start: 'true'
 };
 
 export const homeObjThree = {
@@ -47,17 +47,17 @@ export const homeObjThree = {
 };
 
 export const homeObjFour = {
-    lightBg: false,
-    primary:true,
-    imgStart:'', 
-    lightTopLine: true, 
-    lightTextDesc: true, 
+    lightBg: true,
+    primary:false,
+    imgStart:'start', 
+    lightTopLine: false, 
+    lightTextDesc: false, 
     buttonLabel: 'Shop Online', 
     description: 'Company Slogan Here', 
     headline: 'Advertising Tag Here', 
     lightText: true, 
     topLine: 'Sausage',
-    img:require('../../images/Sausage1.png'),
+    img:('../../images/Sausage1.png'),
     alt:'Image',
-    start: ''
-}
+    start: 'true'
+};
