@@ -8,7 +8,10 @@ import {
     TextWrapper, 
     topLine,
     Heading,
-    Subtitle
+    Subtitle,
+    ImgWrapper,
+    Img,
+   
 
 } from './AboutSection.elements'
 
@@ -23,7 +26,12 @@ const AboutSection = ({
     description, 
     headline, 
     lightText, 
-    topLine  }) => {
+    topLine,
+    img,
+    alt,
+    start
+
+}) => {
     return (
         <>
         <About lightBg={lightBg}>
@@ -40,6 +48,11 @@ const AboutSection = ({
                                 </Button>
                             </Link>
                         </TextWrapper>
+                    </AboutColumn>
+                    <AboutColumn>
+                        <ImgWrapper start={start}>
+                            <img src='../../images/Sauage1.png' alt='sausage1'/>
+                        </ImgWrapper>
                     </AboutColumn>
                 </AboutRow>
 

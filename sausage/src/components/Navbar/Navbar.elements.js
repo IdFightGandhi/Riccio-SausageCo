@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { GiSausage } from "react-icons/gi";
 import { Link } from 'react-router-dom';
 import { Container } from '../../globalStyles'
-import Logo from '../../assets/Logo.png'
+import logo from '../../assets/Logo.png'
 
 export const Nav = styled.nav`
 background: #fff;
