@@ -55,7 +55,7 @@ const Navbar = () => {
                     </NavItem>
                     <NavItem>
                         <NavLinks to='/findstore'>
-                            Stores Near You
+                            Products
                         </NavLinks>
                     </NavItem>
                     <NavItem>
@@ -71,12 +71,12 @@ const Navbar = () => {
                     <NavItemBtn>
                         {button ? (
                             <NavBtnLink to="/shop">
-                                <Button primary>SHOP ONLINE</Button>
+                                <Button primary>SHOP COMING SOON</Button>
                             </NavBtnLink>
                         ): (
                             <NavBtnLink to="/shop">
                                 <Button fontBig primary>
-                                    SHOP ONLINE
+                                    SHOP COMING SOON
                                 </Button>
                             </NavBtnLink>
                         )}

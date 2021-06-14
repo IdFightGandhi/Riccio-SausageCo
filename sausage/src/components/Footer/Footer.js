@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaFacebook, FaInstagram, } from 'react-icons/fa'
 import {
     FooterContainer, 
     FooterSubscription, 
@@ -10,7 +11,14 @@ import {
     FooterLinksWrapper,
     FooterLink,
     FooterLinksItems,
-    FooterLinkTitle
+    FooterLinkTitle,
+    SocialMedia,
+    SocialMediaWrap,
+    SocialLogo,
+    SocialIcon,
+    SocialIcons,
+    SocialIconLink,
+    WebsiteRights
 
 } from './Footer.elements';
 import { Button } from '../../globalStyles'
@@ -50,6 +58,8 @@ const Footer = () => {
                         <FooterLink to='/'>Where to Find Us</FooterLink>
                         <FooterLink to='/'>Shop</FooterLink>
                     </FooterLinksItems>
+                    </FooterLinksWrapper>
+                    <FooterLinksWrapper>
                     <FooterLinksItems>
                         <FooterLinkTitle>
                             Social Media
@@ -61,6 +71,25 @@ const Footer = () => {
                     </FooterLinksItems>
                 </FooterLinksWrapper>
             </FooterLinksContainer>
+            <SocialMedia>
+                <SocialMediaWrap>
+                    <SocialLogo to="/">
+                        <SocialIcon>
+                            test
+                        </SocialIcon>
+                        <WebsiteRights>Riccio's Sausage Company © 2021</WebsiteRights>
+                        <SocialIcons>
+                            <SocialIconLink href='/' target="_blank" aria-label="Facebook">
+                                <FaFacebook />
+                            </SocialIconLink>
+                            <SocialIconLink href='/' target="_blank" aria-label="Instagram">
+                                <FaInstagram />
+                            </SocialIconLink>
+
+                        </SocialIcons>
+                    </SocialLogo>
+                </SocialMediaWrap>
+            </SocialMedia>
         </FooterContainer>
     )
 }

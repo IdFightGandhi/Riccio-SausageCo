@@ -43,11 +43,11 @@ const AboutSection = ({
                             <topLine lightTopLine={lightTopLine}>{topLine}</topLine>
                             <Heading lightText={lightText}>{headline}</Heading>
                             <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                            <Link to='/shop'>
+                            {/* <Link to='/shop'>
                                 <Button big fontBig primary={primary}>
                                 {buttonLabel}
                                 </Button>
-                            </Link>
+                            </Link> */}
                         </TextWrapper>
                     </AboutColumn>
                     <AboutColumn>
