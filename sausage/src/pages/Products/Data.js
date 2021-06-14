@@ -9,7 +9,7 @@ export const homeObjOne = {
     headline: 'Advertising Tag Here', 
     lightText: true, 
     topLine: 'Sausage',
-    img:require('../../images/Sausage1.png'),
+    img:require('../../images/sausage.png'),
     alt:'Sausage',
     start: ''
 };
@@ -25,7 +25,7 @@ export const homeObjTwo = {
     headline: 'Advertising Tag Here', 
     lightText: true, 
     topLine: 'Sausage',
-    img:('../../images/Sausage1.png'),
+    img:('../../images/sausage.png'),
     alt:'Image',
     start: 'true'
 };
@@ -41,23 +41,8 @@ export const homeObjThree = {
     headline: 'Advertising Tag Here', 
     lightText: true, 
     topLine: 'Sausage',
-    img:require('../../images/Sausage1.png'),
+    img:require('../../images/sausage.png'),
     alt:'Image',
     start: ''
 };
 
-export const homeObjFour = {
-    lightBg: true,
-    primary:false,
-    imgStart:'start', 
-    lightTopLine: false, 
-    lightTextDesc: false, 
-    buttonLabel: 'Shop Online', 
-    description: 'Company Slogan Here', 
-    headline: 'Advertising Tag Here', 
-    lightText: true, 
-    topLine: 'Sausage',
-    img:('../../images/Sausage1.png'),
-    alt:'Image',
-    start: 'true'
-};

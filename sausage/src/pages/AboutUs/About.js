@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Button } from '../../globalStyles'
 import { Link } from 'react-router-dom'
-import sausage from '../../images/sausage.png'
+import Pic from '../../images/onions.jpg'
 import { 
     About, 
     AboutRow, 
@@ -12,10 +12,11 @@ import {
     Subtitle,
     ImgWrapper,
     Img,
-} from './AboutSection.elements'
+} from '../../components/AboutSection/AboutSection.elements'
+import { homeObjOne } from '../HomePage/Data'
 
 
-const AboutSection = ({ 
+const AboutPage = ({ 
     primary,
     lightBg, 
     imgStart, 
@@ -50,7 +51,7 @@ const AboutSection = ({
                     </AboutColumn>
                     <AboutColumn>
                         <ImgWrapper start={start}>
-                            <Img src={sausage} alt={alt}/>
+                            <Img src={Pic} alt={alt}/>
                         </ImgWrapper>
                     </AboutColumn>
                 </AboutRow>
@@ -63,4 +64,4 @@ const AboutSection = ({
     )
 }
 
-export default AboutSection
+export default AboutPage;

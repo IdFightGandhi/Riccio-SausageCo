@@ -5,12 +5,12 @@ export const homeObjOne = {
     lightTopLine: true, 
     lightTextDesc: true, 
     buttonLabel: 'Shop Coming Soon!', 
-    description: 'Company Slogan Here', 
+    // description: 'Company Slogan Here', 
     headline: 'Taste True Calabrian Sausage', 
     lightText: true, 
     // topLine: 'Sausage',
-    img:require('../../images/Sausage1.png'),
-    alt:'Sausage',
+    img: require('../../images/sausage.png'),
+    alt:'IMAGE',
     start: ''
 };
 
@@ -41,23 +41,8 @@ export const homeObjThree = {
     headline: 'Advertising Tag Here', 
     lightText: true, 
     topLine: 'Sausage',
-    img:require('../../images/Sausage1.png'),
+    img:require('../../images/onions.jpg'),
     alt:'Image',
     start: ''
 };
 
-export const homeObjFour = {
-    lightBg: true,
-    primary:false,
-    imgStart:'start', 
-    lightTopLine: false, 
-    lightTextDesc: false, 
-    buttonLabel: 'Shop Online', 
-    description: 'Company Slogan Here', 
-    headline: 'Advertising Tag Here', 
-    lightText: true, 
-    topLine: 'Sausage',
-    img:('../../images/Sausage1.png'),
-    alt:'Image',
-    start: 'true'
-};
