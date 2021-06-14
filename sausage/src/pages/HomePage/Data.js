@@ -8,7 +8,7 @@ export const homeObjOne = {
     description: 'Company Slogan Here', 
     headline: 'Taste True Calabrian Sausage', 
     lightText: true, 
-    topLine: 'Sausage',
+    // topLine: 'Sausage',
     img:require('../../images/Sausage1.png'),
     alt:'Sausage',
     start: ''
@@ -24,7 +24,7 @@ export const homeObjTwo = {
     description: "Riccio's Sausage is made with the highest quality ingredients. We seek to bring you the most authentic and traditional Calabrian flavors by using only the best cuts of prime pork shoulder and absolutely no preservatives. ", 
     headline: 'Quality and Satisfaction', 
     lightText: true, 
-    topLine: 'Sausage',
+    // topLine: 'Sausage',
     img:('../../images/plated.jpg'),
     alt:'Image',
     start: 'true'

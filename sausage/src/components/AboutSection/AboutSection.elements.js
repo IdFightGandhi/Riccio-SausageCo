@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const About = styled.div`
-color:#fff;
+color:${({ lightBg }) => (lightBg ? '#CB333B' : '#fff')};
 padding: 80px 0;
-background: ${({ lightBg }) => (lightBg ? '#fff' : '#008c45')};
+background: ${({ lightBg }) => (lightBg ? 'fff' : '#008c45')};
 `;
 
 export const AboutRow = styled.div `
