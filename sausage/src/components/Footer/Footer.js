@@ -26,7 +26,7 @@ import { Button } from '../../globalStyles'
 const Footer = () => {
     return (
         <FooterContainer>
-            <FooterSubscription>
+            {/* <FooterSubscription>
                 <FooterSubHeading>
                     Text
                 </FooterSubHeading>
@@ -37,10 +37,10 @@ const Footer = () => {
                     <FormInput name='email' type='email' placeholder="Your Email"/>
                         <Button fontBig>Subscribe</Button>
                 </Form>
-            </FooterSubscription>
+            </FooterSubscription> */}
             <FooterLinksContainer>
                 <FooterLinksWrapper>
-                    <FooterLinksItems>
+                    {/* <FooterLinksItems>
                         <FooterLinkTitle>
                             About Us
                         </FooterLinkTitle>
@@ -48,45 +48,30 @@ const Footer = () => {
                         <FooterLink to='/contact'>Contact Us</FooterLink>
                         <FooterLink to='/'>Where to Find Us</FooterLink>
                         <FooterLink to='/'>Shop</FooterLink>
-                    </FooterLinksItems>
+                    </FooterLinksItems> */}
                     <FooterLinksItems>
                         <FooterLinkTitle>
                             Contact Us
                         </FooterLinkTitle>
-                        <FooterLink to='/about'>Our Story</FooterLink>
-                        <FooterLink to='/contact'>Contact Us</FooterLink>
-                        <FooterLink to='/'>Where to Find Us</FooterLink>
-                        <FooterLink to='/'>Shop</FooterLink>
+                        <FooterLink to='/contact'>Instagram</FooterLink>
+                        <SocialIcons>
+                            <SocialIconLink href='/' target="_blank" aria-label="Instagram">
+                                <FaInstagram />
+                            </SocialIconLink>
+                        </SocialIcons>
                     </FooterLinksItems>
                     </FooterLinksWrapper>
                     <FooterLinksWrapper>
-                    <FooterLinksItems>
-                        <FooterLinkTitle>
-                            Social Media
-                        </FooterLinkTitle>
-                        <FooterLink to='/about'>Our Story</FooterLink>
-                        <FooterLink to='/contact'>Contact Us</FooterLink>
-                        <FooterLink to='/'>Where to Find Us</FooterLink>
-                        <FooterLink to='/'>Shop</FooterLink>
-                    </FooterLinksItems>
                 </FooterLinksWrapper>
             </FooterLinksContainer>
             <SocialMedia>
                 <SocialMediaWrap>
                     <SocialLogo to="/">
-                        <SocialIcon>
+                        {/* <SocialIcon>
                             test
-                        </SocialIcon>
+                        </SocialIcon> */}
                         <WebsiteRights>Riccio's Sausage Company © 2021</WebsiteRights>
-                        <SocialIcons>
-                            <SocialIconLink href='/' target="_blank" aria-label="Facebook">
-                                <FaFacebook />
-                            </SocialIconLink>
-                            <SocialIconLink href='/' target="_blank" aria-label="Instagram">
-                                <FaInstagram />
-                            </SocialIconLink>
-
-                        </SocialIcons>
+                        
                     </SocialLogo>
                 </SocialMediaWrap>
             </SocialMedia>

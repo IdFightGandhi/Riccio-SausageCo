@@ -37,11 +37,11 @@ export const homeObjThree = {
     lightTopLine: true, 
     lightTextDesc: true, 
     buttonLabel: 'Shop Online', 
-    description: 'Company Slogan Here', 
-    headline: 'Advertising Tag Here', 
+    description: 'Salsiccia Calabrese, the most popular sausage of Southern Italy, is made with all-natural ground pork shoulder, and seasoned with salt, peperoncino picante (Chili pepper), and peperoncino dolce (Sweet Chili pepper) ', 
+    headline: 'Our Products', 
     lightText: true, 
-    topLine: 'Sausage',
-    img:require('../../images/onions.jpg'),
+    // topLine: 'Sausage',
+    img:'',
     alt:'Image',
     start: ''
 };

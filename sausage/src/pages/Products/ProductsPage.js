@@ -13,7 +13,7 @@ import {
     ImgWrapper,
     Img,
 } from '../../components/AboutSection/AboutSection.elements'
-import { homeObjOne } from '../HomePage/Data'
+import { homeObjThree} from '../Products/Data'
 
 
 const ProductsPage = ({ 

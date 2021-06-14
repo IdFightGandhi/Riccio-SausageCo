@@ -5,7 +5,7 @@ import { Container } from '../../globalStyles'
 // import logo from '../../images/Logo.png'
 
 export const Nav = styled.nav`
-background: #fff;
+background: #d57148;
 height: 80px;
 display: flex;
 justify-content: center;
@@ -24,7 +24,7 @@ ${Container}
 `;
 
 export const NavLogo = styled(Link)`
-color: #CB333B;
+color: #fff;
 justify-self: flex-start;
 cursor: pointer;
 text-decoration: none;
@@ -92,7 +92,7 @@ border-bottom: 2px solid transparent;
 `
 
 export const NavLinks = styled(Link)`
-color: #CB333B;
+color: #fff;
 display: flex;
 align-items: center;
 text-decoration: none;
