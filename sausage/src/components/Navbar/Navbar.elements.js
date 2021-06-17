@@ -1,135 +1,87 @@
 import styled from 'styled-components'
-import { GiSausage } from "react-icons/gi";
-import { Link } from 'react-router-dom';
-import { Container } from '../../globalStyles'
-// import logo from '../../images/Logo.png'
+import { NavLink as Link} from 'react-router-dom'
+import {FaBars} from 'react-icons/fa'
 
-export const Nav = styled.nav`
-background: #d57148;
+export const Nav = styled.nav `
+background: #000;
 height: 80px;
-display: flex;
-justify-content: center;
-align-items: center;
-position: sticky;
-top: 0;
-z-index:999;
-`
-
-export const NavbarContainer = styled(Container)`
 display: flex;
 justify-content: space-between;
-height: 80px;
-
-${Container}
-`;
-
-export const NavLogo = styled(Link)`
-color: #fff;
-justify-self: flex-start;
-cursor: pointer;
-text-decoration: none;
-font-size: 2rem;
-display: flex;
-align-items: center;
+padding: 0.5rem calc((100vw - 1000px) /2);
+z-index: 10;
 
 `
 
-export const NavIcon = styled(GiSausage)`
-margin-right: 0.5rem;
-`
-
-export const MobileIcon = styled.div`
-display: none;
-
-
-@media screen and (max-width: 960px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate()(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-
-}
-`;
-
-export const NavMenu = styled.ul`
-display:flex;
-align-items: center;
-list-style: none;
-text-align: center;
-
-@media screen and (max-width: 960px) {
-    display:flex;
-    flex-direction: column;
-    width: 100%;
-    height:90vh;
-    position: absolute;
-    top: 80px;
-    left: ${({click}) => (click ? 0 : '-100%')};
-    opacity: 1;
-    transition: all 0.5s ease;
-    background: #101522;
-
-}
-`;
-
-export const NavItem = styled.li`
-height: 80px;
-border-bottom: 2px solid transparent;
-
-&:hover {
-    border-bottom: 2px solid #4b59f7;
-}
-
-@media screen and (max-width: 960px) {
-    width: 100%;
-     &:hover {
-         border: none;
-     }
-}
-`
-
-export const NavLinks = styled(Link)`
+export const NavLink = styled(Link)`
 color: #fff;
 display: flex;
 align-items: center;
 text-decoration: none;
-padding: 0.5rem 1rem;
+padding: 0 1rem;
 height: 100%;
+cursor: pointer;
 
-@media screen and (max-width: 960px) {
-    text-align: center;
-    padding: 2rem;
-    width: 100%;
-    display:table;
-
-    &:hover {
-        color:#4b59f7;
-        transition: all 0.3s ease;
-    }
+&.active {
+    color: #15cdfc;
 }
-`;
+`
 
-export const NavItemBtn = styled.li`
-@media screen and (max-width: 960px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    height: 120px;
+export const Bars = styled(FaBars)`
+display: none;
+color: #fff;
+
+@media screen and (max-width: 768px) {
+
+display: block;
+position: absolute;
+top: 0;
+right: 0;
+transform: translate(-100%, 75%);
+font-size: 1.8rem;
+cursor: pointer;
+}
+`
+
+export const NavMenu = styled.div`
+display: flex;
+align-items: center;
+margin-right: -24px;
+
+@media screen and (max-width:768px) {
+    display: none;
+}
+`
+
+export const NavBtn = styled.nav `
+display: flex;
+align-items: center;
+margin-right: 24px;
+
+@media screen and (max-width: 768px) {
+    display: none;
 }
 `
 
 export const NavBtnLink = styled(Link)`
-display:flex;
-justify-content: center;
-align-items: center;
-text-decoration: none;
-padding: 8px 16px;
-height: 100%;
-width:100%;
-border: none;
+border-radius: 4px;
+background: #256ce1;
+padding: 10px 22px;
+color:#fff;
+border:none;
 outline: none;
+cursor: pointer;
+transition: all 0.2s ease-in-out;
+text-decoration: none;
+
+&:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color:#012606;
+}
+`
+
+export const Img = styled.img`
+height: 70px;
+display: flex;
+
 `
