@@ -1,45 +1,90 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { IconContext } from 'react-icons/lib';
+import { Button } from '../../globalStyles';
+import logo from '../../images/logo.jpg'
 import {
   Nav,
-  NavLink,
-  Bars,
+  NavbarContainer,
+  NavLogo,
+  NavIcon,
+  MobileIcon,
   NavMenu,
-  NavBtn,
+  NavItem,
+  NavItemBtn,
+  NavLinks,
   NavBtnLink,
   Img
-} from './Navbar.elements.js';
-import logo from '../../images/logo.jpg'
+} from './Navbar.elements';
 
-const Navbar = ({ toggle }) => {
+function Navbar() {
+  const [click, setClick] = useState(false);
+  const [button, setButton] = useState(true);
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
+  const showButton = () => {
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  };
+
+  useEffect(() => {
+    showButton();
+  }, []);
+
+  window.addEventListener('resize', showButton);
+
   return (
     <>
-      <Nav>
-        <NavLink to='/'>
-          <Img src={logo} alt='logo' />
-        </NavLink>
-        <Bars />
-        <NavMenu>
-          <NavLink to='/products' activeStyle>
-            Products
-          </NavLink>
-          <NavLink to='/services' activeStyle>
-            About
-          </NavLink>
-          <NavLink to='/contact-us' activeStyle>
-            Contact Us
-          </NavLink>
-          {/* <NavLink to='/sign-up' activeStyle>
-            Sign Up
-          </NavLink> */}
-          {/* Second Nav */}
-          {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
-        </NavMenu>
-        <NavBtn>
-          <NavBtnLink to='/signin'>Store Coming Soon</NavBtnLink>
-        </NavBtn>
-      </Nav>
+      <IconContext.Provider value={{ color: '#fff' }}>
+        <Nav>
+          <NavbarContainer>
+            <NavLogo to='/' onClick={closeMobileMenu}>
+              
+              <Img src = {logo} alt='logo' />
+            </NavLogo>
+            <MobileIcon onClick={handleClick}>
+              {click ? <FaTimes /> : <FaBars />}
+            </MobileIcon>
+            <NavMenu onClick={handleClick} click={click}>
+              <NavItem>
+                <NavLinks to='/' onClick={closeMobileMenu}>
+                  Home
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to='/services' onClick={closeMobileMenu}>
+                  Services
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to='/products' onClick={closeMobileMenu}>
+                  Products
+                </NavLinks>
+              </NavItem>
+              <NavItemBtn>
+                {button ? (
+                  <NavBtnLink to='/sign-up'>
+                    <Button primary>SIGN UP</Button>
+                  </NavBtnLink>
+                ) : (
+                  <NavBtnLink to='/sign-up'>
+                    <Button onClick={closeMobileMenu} fontBig primary>
+                      SIGN UP
+                    </Button>
+                  </NavBtnLink>
+                )}
+              </NavItemBtn>
+            </NavMenu>
+          </NavbarContainer>
+        </Nav>
+      </IconContext.Provider>
     </>
   );
-};
+}
 
 export default Navbar;

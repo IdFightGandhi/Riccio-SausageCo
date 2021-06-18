@@ -1,19 +1,19 @@
-import React from 'react'
-import { homeObjOne, homeObjTwo, homeObjThree } from './Data'
-import { AboutSection } from '../../components'
-import  AboutPage  from '../AboutUs/About'
-import ProductsPage from '../Products/ProductsPage'
+import React from 'react';
+import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from './Data';
+import { InfoSection } from '../../components';
+import About from '../../components/About/About'
+import Products from '../../components/Products/Products'
 
-const Home = () => {
-    return (
-        <>
-       
-          <AboutSection { ...homeObjOne }/>  
-          <AboutPage { ...homeObjTwo }/>  
-          <ProductsPage { ...homeObjThree }/>  
-        </>
-    )
+
+function Home() {
+  return (
+    <>
+      <InfoSection {...homeObjOne} />
+      <About {...homeObjTwo}/>
+      <Products {...homeObjThree} />
+      
+    </>
+  );
 }
 
-export default Home
-
+export default Home;

@@ -1,36 +1,38 @@
 export const homeObjOne = {
+    primary: true,
     lightBg: false,
-    primary:true,
-    imgStart:'', 
-    lightTopLine: true, 
-    lightTextDesc: true, 
-    buttonLabel: 'Shop Coming Soon!', 
-    // description: 'Company Slogan Here', 
-    headline: 'Taste True Calabrian Sausage', 
-    lightText: true, 
-    // topLine: 'Sausage',
-    img: require('../../images/sausage.png'),
-    alt:'IMAGE',
+    lightTopLine: true,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'True Calabrian Sausage',
+    headline: "Bringing the unique flavors of Calabria, Italy to Seattle's plate",
+    description:
+      'We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals.',
+    buttonLabel: 'Get Started',
+    imgStart: '',
+    // img: require('../../images/logo.jpg'),
+    alt: 'sausagecompanypic',
     start: ''
-};
-
-export const homeObjTwo = {
+  };
+  
+  export const homeObjTwo = {
+    primary: false,
     lightBg: true,
-    primary:false,
-    imgStart:'start', 
-    lightTopLine: false, 
-    lightTextDesc: false, 
-    // buttonLabel: 'Shop Online', 
-    description: "Riccio's Sausage is made with the highest quality ingredients. We seek to bring you the most authentic and traditional Calabrian flavors by using only the best cuts of prime pork shoulder and absolutely no preservatives. ", 
-    headline: 'Quality and Satisfaction', 
-    lightText: true, 
-    // topLine: 'Sausage',
-    img:('../../images/plated.jpg'),
-    alt:'Image',
-    start: 'true'
-};
-
-export const homeObjThree = {
+    lightTopLine: true,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'Locally sourced, Made fresh',
+    headline: 'Quality and Satisfaction',
+    description:
+    "Riccio's Sausage is made with the highest quality ingredients. We seek to bring you the most authentic and traditional Calabrian flavors by using only the best cuts of prime pork shoulder and absolutely no preservatives. ", 
+    buttonLabel: 'Learn More',
+    imgStart: '',
+    img: require('../../images/onions.jpg'),
+    alt: 'Vault',
+    start: ''
+  };
+  
+  export const homeObjThree = {
     lightBg: false,
     primary:true,
     imgStart:'', 
@@ -45,4 +47,21 @@ export const homeObjThree = {
     alt:'Image',
     start: ''
 };
-
+  
+  export const homeObjFour = {
+    primary: false,
+    lightBg: true,
+    lightTopLine: true,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'Secure Database',
+    headline: 'All your data is stored on our secure server',
+    description:
+      'You will never have to worry about your information getting leaked. Our team of security experts will ensure your records are kept safe.',
+    buttonLabel: 'Sign Up Now',
+    imgStart: 'start',
+    img: require('../../images/grill.jpg'),
+    alt: 'Vault',
+    start: 'true'
+  };
+  

@@ -22,28 +22,17 @@ const Footer = () => {
       <FooterWrap>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to='/'>Pizza</SocialLogo>
+            <SocialLogo to='/'>Riccio's Sausage Co. ©2021 </SocialLogo>
+            <SocialLogo>ricciossausageco@gmail.com</SocialLogo>
+            <SocialLogo>Tel: (425) 233-1256</SocialLogo>
             <SocialIcons>
-              <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
+              {/* <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
                 <FaFacebook />
-              </SocialIconLink>
-              <SocialIconLink href='/' target='_blank' aria-label='Instagram'>
+              </SocialIconLink> */}
+              {/* <SocialIconLink href='/' target='_blank' aria-label='Instagram'>
                 <FaInstagram />
               </SocialIconLink>
-              <SocialIconLink href='/' target='_blank' aria-label='Youtube'>
-                <FaYoutube />
-              </SocialIconLink>
-              <SocialIconLink
-                href='//www.twitter.com/briandesignz'
-                target='_blank'
-                aria-label='Twitter'
-                rel='noopener noreferrer'
-              >
-                <FaTwitter />
-              </SocialIconLink>
-              <SocialIconLink href='/' target='_blank' aria-label='Linkedin'>
-                <FaLinkedin />
-              </SocialIconLink>
+  */}
             </SocialIcons>
           </SocialMediaWrap>
         </SocialMedia>
