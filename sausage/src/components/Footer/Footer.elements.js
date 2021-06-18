@@ -42,6 +42,8 @@ export const SocialLogo = styled(Link)`
   align-items: center;
   margin-bottom: 16px;
   font-weight: bold;
+  padding:10px;
+  margin-right: 5px;
 `;
 
 export const SocialIcons = styled.div`
