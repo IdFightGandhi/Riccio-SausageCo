@@ -10,7 +10,7 @@ import {
 } from './Navbar.elements.js';
 import logo from '../../images/logo.jpg'
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav>
@@ -19,23 +19,23 @@ const Navbar = () => {
         </NavLink>
         <Bars />
         <NavMenu>
-          <NavLink to='/about' activeStyle>
-            About
+          <NavLink to='/products' activeStyle>
+            Products
           </NavLink>
           <NavLink to='/services' activeStyle>
-            Services
+            About
           </NavLink>
           <NavLink to='/contact-us' activeStyle>
             Contact Us
           </NavLink>
-          <NavLink to='/sign-up' activeStyle>
+          {/* <NavLink to='/sign-up' activeStyle>
             Sign Up
-          </NavLink>
+          </NavLink> */}
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to='/signin'>Sign In</NavBtnLink>
+          <NavBtnLink to='/signin'>Store Coming Soon</NavBtnLink>
         </NavBtn>
       </Nav>
     </>

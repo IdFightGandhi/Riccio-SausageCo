@@ -1,82 +1,55 @@
-import React from 'react'
-import { FaFacebook, FaInstagram, } from 'react-icons/fa'
+import React from 'react';
 import {
-    FooterContainer, 
-    FooterSubscription, 
-    FooterSubHeading, 
-    FooterSubText,
-    Form,
-    FormInput,
-    FooterLinksContainer,
-    FooterLinksWrapper,
-    FooterLink,
-    FooterLinksItems,
-    FooterLinkTitle,
-    SocialMedia,
-    SocialMediaWrap,
-    SocialLogo,
-    SocialIcon,
-    SocialIcons,
-    SocialIconLink,
-    WebsiteRights
-
+  FaFacebook,
+  FaInstagram,
+  FaYoutube,
+  FaTwitter,
+  FaLinkedin
+} from 'react-icons/fa';
+import {
+  FooterContainer,
+  FooterWrap,
+  SocialMedia,
+  SocialMediaWrap,
+  SocialLogo,
+  SocialIcons,
+  SocialIconLink
 } from './Footer.elements';
-import { Button } from '../../globalStyles'
 
 const Footer = () => {
-    return (
-        <FooterContainer>
-            {/* <FooterSubscription>
-                <FooterSubHeading>
-                    Text
-                </FooterSubHeading>
-                <FooterSubText>
-                    More Text
-                </FooterSubText>
-                <Form>
-                    <FormInput name='email' type='email' placeholder="Your Email"/>
-                        <Button fontBig>Subscribe</Button>
-                </Form>
-            </FooterSubscription> */}
-            <FooterLinksContainer>
-                <FooterLinksWrapper>
-                    {/* <FooterLinksItems>
-                        <FooterLinkTitle>
-                            About Us
-                        </FooterLinkTitle>
-                        <FooterLink to='/about'>Our Story</FooterLink>
-                        <FooterLink to='/contact'>Contact Us</FooterLink>
-                        <FooterLink to='/'>Where to Find Us</FooterLink>
-                        <FooterLink to='/'>Shop</FooterLink>
-                    </FooterLinksItems> */}
-                    <FooterLinksItems>
-                        <FooterLinkTitle>
-                            Contact Us
-                        </FooterLinkTitle>
-                        <FooterLink to='/contact'>Instagram</FooterLink>
-                        <SocialIcons>
-                            <SocialIconLink href='/' target="_blank" aria-label="Instagram">
-                                <FaInstagram />
-                            </SocialIconLink>
-                        </SocialIcons>
-                    </FooterLinksItems>
-                    </FooterLinksWrapper>
-                    <FooterLinksWrapper>
-                </FooterLinksWrapper>
-            </FooterLinksContainer>
-            <SocialMedia>
-                <SocialMediaWrap>
-                    <SocialLogo to="/">
-                        {/* <SocialIcon>
-                            test
-                        </SocialIcon> */}
-                        <WebsiteRights>Riccio's Sausage Company © 2021</WebsiteRights>
-                        
-                    </SocialLogo>
-                </SocialMediaWrap>
-            </SocialMedia>
-        </FooterContainer>
-    )
-}
+  return (
+    <FooterContainer>
+      <FooterWrap>
+        <SocialMedia>
+          <SocialMediaWrap>
+            <SocialLogo to='/'>Pizza</SocialLogo>
+            <SocialIcons>
+              <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
+                <FaFacebook />
+              </SocialIconLink>
+              <SocialIconLink href='/' target='_blank' aria-label='Instagram'>
+                <FaInstagram />
+              </SocialIconLink>
+              <SocialIconLink href='/' target='_blank' aria-label='Youtube'>
+                <FaYoutube />
+              </SocialIconLink>
+              <SocialIconLink
+                href='//www.twitter.com/briandesignz'
+                target='_blank'
+                aria-label='Twitter'
+                rel='noopener noreferrer'
+              >
+                <FaTwitter />
+              </SocialIconLink>
+              <SocialIconLink href='/' target='_blank' aria-label='Linkedin'>
+                <FaLinkedin />
+              </SocialIconLink>
+            </SocialIcons>
+          </SocialMediaWrap>
+        </SocialMedia>
+      </FooterWrap>
+    </FooterContainer>
+  );
+};
 
-export default Footer
+export default Footer;

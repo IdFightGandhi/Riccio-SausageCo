@@ -96,6 +96,7 @@ export const NavBtnLink = styled(Link)`
 `;
 
 export const Img = styled.img`
-height: 50px;
+height: 60px;
+width:55px;
 justify-self: flex-start;
 `
