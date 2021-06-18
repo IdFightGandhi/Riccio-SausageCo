@@ -8,7 +8,7 @@ export const homeObjOne = {
     headline: "Bringing the unique flavors of Calabria, Italy to Seattle's plate",
     description:
       'We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals.',
-    buttonLabel: 'Get Started',
+    buttonLabel: 'Online Store Coming Soon!',
     imgStart: '',
     // img: require('../../images/logo.jpg'),
     alt: 'sausagecompanypic',
