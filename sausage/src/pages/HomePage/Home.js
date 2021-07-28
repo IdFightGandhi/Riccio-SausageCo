@@ -10,9 +10,9 @@ function Home() {
   return (
     <>
       <InfoSection {...homeObjOne} />
-      <About {...homeObjTwo}/>
-      <Products {...homeObjThree} />
-      <Story {...homeObjFour} />
+      <About {...homeObjTwo} />
+      <Products {...homeObjThree} to='products' />
+      <Story {...homeObjFour} to='about' />
       
     </>
   );
