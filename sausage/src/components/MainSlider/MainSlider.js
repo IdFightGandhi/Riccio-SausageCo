@@ -44,12 +44,13 @@ flex-wrap:nowrap;
 overflow-x: hidden;
 position:relative;
 max-height: 70vh;
-/* min-width: 100vw; */
-`;
+`
 
 const Slide = styled.div`
-height: 100%;
+height: auto;
 width:100%;
+max-width:100%;
+
 display: block;
 flex-shrink: 0;
 overflow: hidden;
