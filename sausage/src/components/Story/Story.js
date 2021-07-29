@@ -31,7 +31,7 @@ function Story({
 }) {
   return (
     <>
-      <InfoSec lightBg={lightBg}>
+      <InfoSec id='story' lightBg={lightBg}>
         <Container>
           <InfoRow imgStart={imgStart}>
             <InfoColumn>
