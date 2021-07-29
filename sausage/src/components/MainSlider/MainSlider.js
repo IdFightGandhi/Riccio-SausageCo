@@ -95,7 +95,7 @@ const MainSlider = ({ images = [],
 
 
     return (
-        <Wrapper {...props}>
+        <Wrapper id='/' {...props}>
             {images.map((imageUrl, index) => (
                 <Slide 
                 key={index}

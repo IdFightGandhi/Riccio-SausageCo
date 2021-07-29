@@ -49,7 +49,7 @@ export const homeObjOne = {
 };
   
   export const homeObjFour = {
-    primary: false,
+    primary: false ,
     lightBg: true,
     lightTopLine: true,
     lightText: true,

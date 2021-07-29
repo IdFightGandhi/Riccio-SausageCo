@@ -9,7 +9,7 @@ import Story from '../../components/Story/Story'
 function Home() {
   return (
     <>
-      <InfoSection {...homeObjOne} />
+      {/* <InfoSection {...homeObjOne} /> */}
       <About {...homeObjTwo} />
       <Products {...homeObjThree} to='products' />
       <Story {...homeObjFour} to='about' />

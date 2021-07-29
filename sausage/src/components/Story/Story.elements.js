@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const InfoSec = styled.div`
   color: #fff;
-  padding: 160px 0;
-  background: ${({ lightBg }) => (lightBg ? '#D24B52' : '#fff')};
+  padding: 100px 0;
+  background: ${({ lightBg }) => (lightBg ? '#D24B52' : 'red')};
 `;
 
 export const InfoRow = styled.div`
@@ -69,7 +69,7 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? 'black' : '#1c2237')};
+  color: ${({ lightText }) => (lightText ? '#fff' : '#1c2237')};
 `;
 
 export const Subtitle = styled.p`
@@ -77,5 +77,5 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ lightTextDesc }) => (lightTextDesc ? '#a9b3c1' : '#1c2237')};
+  color: ${({ lightTextDesc }) => (lightTextDesc ? '#fff' : '#1c2237')};
 `;

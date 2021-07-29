@@ -8,7 +8,6 @@ import ProductCarousel from './components/ProductCarousel/ProductCarousel'
 import image1 from "../src/images/onions.jpg"
 import image2 from "../src/images/image0.jpeg"
 import image3 from "../src/images/quality.png"
-import Story from './components/Story/Story';
 
 
 
@@ -23,9 +22,7 @@ function App() {
       <ProductCarousel />
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/about" exact component={Story} />
-        {/* <Route path="/" exact component={Home} /> */}
-        {/* <Route path="/" exact component={Home} /> */}
+
       </Switch>
       <Footer />
     </Router>

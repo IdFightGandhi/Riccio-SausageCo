@@ -42,7 +42,7 @@ const Card=(props)=>{
 const ProductCarousel = () => {
     return (
         <>
-        <div style={{ margin:"30px", }}>
+        <div id='products'style={{ margin:"30px", }}>
             <h1 style={{justifyContent:"center", display:'flex',margin:'10px',paddingTop:'20px',paddingBottom:'30px',textDecoration:'underline', color:'#CD212A'}}>Best Seller</h1>
             <Slider 
             style={{marginTop:'10px',marginBottom:'10px'}}

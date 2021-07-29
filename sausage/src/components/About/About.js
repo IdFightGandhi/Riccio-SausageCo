@@ -31,7 +31,7 @@ function About({
 }) {
   return (
     <>
-      <InfoSec id='about' lightBg={lightBg}>
+      <InfoSec lightBg={lightBg}>
         <Container>
           <InfoRow imgStart={!imgStart}>
             <InfoColumn>
