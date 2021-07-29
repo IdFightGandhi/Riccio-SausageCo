@@ -1,17 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
-import { Button } from '../../globalStyles';
 import logo from '../../images/logo.jpg'
 import {
   Nav,
   NavbarContainer,
   NavLogo,
-  NavIcon,
+  // NavIcon,
   MobileIcon,
   NavMenu,
   NavItem,
-  NavItemBtn,
+  // NavItemBtn,
   NavLinks,
   NavBtnLink,
   Img
@@ -46,6 +45,7 @@ function Navbar() {
             <NavLogo to='/' onClick={closeMobileMenu}>
               
               <Img src = {logo} alt='logo' />
+              Riccio's Sausage Company
             </NavLogo>
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
