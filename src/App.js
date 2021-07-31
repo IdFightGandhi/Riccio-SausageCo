@@ -18,7 +18,7 @@ function App() {
       <GlobalStyle />
       <Navbar />
       <MainSlider 
-      images={[image1,image2, image3]}/>
+      images={[image1,image2, ]}/>
       <ProductCarousel />
       <Switch>
         <Route path="/" exact component={Home} />
