@@ -30,10 +30,10 @@ const Footer = () => {
             <SocialMedia>
                 <SocialMediaWrap>
                     <SocialLogo to='/'>
-                        Ricci's Sausage Company
+                        Riccio's Sausage Company
                     </SocialLogo>
                     <ContactNumber>`(425) 496-0802</ContactNumber>
-                    <WebsiteRights>Ricci's Sausage Co © {new Date().getFullYear()} All Rights Reserved.</WebsiteRights>
+                    <WebsiteRights>Riccio's Sausage Co © {new Date().getFullYear()} All Rights Reserved.</WebsiteRights>
                     <SocialIcons>
                         <SocialIconLink href='/' target="_blank" aria-label="Facebook">
                             {/* <FaInstagram /> */}

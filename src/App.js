@@ -19,7 +19,7 @@ function App() {
       <Navbar />
       <MainSlider 
       images={[image1,image2, ]}/>
-      <ProductCarousel />
+      {/* <ProductCarousel /> */}
       <Switch>
         <Route path="/" exact component={Home} />
 

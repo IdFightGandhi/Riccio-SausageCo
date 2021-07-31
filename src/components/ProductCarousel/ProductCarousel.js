@@ -31,9 +31,9 @@ const Card=(props)=>{
     return(
     <div className="productCard">
         <img src={item} alt="pic" style={{width:"100%", height:"150px", objectFit:'contain'}}/>
-        <p style={{display:'flex',alignItems:'center'}}>name</p>
+        {/* <p style={{display:'flex',alignItems:'center'}}>name</p>
         <p style={{display:'flex',alignItems:'center'}}>description</p>
-        <p style={{display:'flex',alignItems:'center'}}>price</p>
+        <p style={{display:'flex',alignItems:'center'}}>price</p> */}
     </div>
     )
 }
