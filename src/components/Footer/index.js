@@ -13,7 +13,8 @@ import {
     SocialLogo,
     WebsiteRights,
     SocialIcons,
-    SocialIconLink
+    SocialIconLink,
+    ContactNumber
 } from './FooterElements' 
 
 
@@ -21,16 +22,17 @@ const Footer = () => {
     return (
         <FooterContainer id='footer'>
         <FooterWrap>
-            <FooterLinksContainer>
+            {/* <FooterLinksContainer>
                 <FooterLinksWrapper>
                     
                 </FooterLinksWrapper>
-            </FooterLinksContainer>
+            </FooterLinksContainer> */}
             <SocialMedia>
                 <SocialMediaWrap>
                     <SocialLogo to='/'>
                         Ricci's Sausage Company
                     </SocialLogo>
+                    <ContactNumber>`(425) 496-0802</ContactNumber>
                     <WebsiteRights>Ricci's Sausage Co © {new Date().getFullYear()} All Rights Reserved.</WebsiteRights>
                     <SocialIcons>
                         <SocialIconLink href='/' target="_blank" aria-label="Facebook">

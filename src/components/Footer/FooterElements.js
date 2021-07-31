@@ -101,6 +101,7 @@ font-weight: bold;
 export const WebsiteRights = styled.small`
 color:#fff;
 margin-bottom: 16px;
+margin-left:20px;
 
 `
 
@@ -114,4 +115,17 @@ width:240px;
 export const SocialIconLink = styled.a`
 color: #fff;
 font-size:24px;
+`
+
+export const ContactNumber = styled.h1`
+color:#fff;
+justify-self: start;
+cursor: pointer;
+text-decoration: none;
+font-size:1.5rem;
+display: flex;
+align-items: center;
+margin-bottom: 16px;
+font-weight: bold;
+
 `
