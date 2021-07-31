@@ -23,14 +23,7 @@ const Footer = () => {
         <FooterWrap>
             <FooterLinksContainer>
                 <FooterLinksWrapper>
-                    <FooterLinkItems>
-                        <FooterLinkTitle>Ricci's Sausage Company</FooterLinkTitle>
-                            <FooterLink to="/about">About Us</FooterLink>
-                            <FooterLink to="/about">Products</FooterLink>
-                            <FooterLink to="/about">Follow Us!</FooterLink>
-                            {/* <FooterLink to="/about">Follow Us!</FooterLink> */}
-                            {/* <FooterLink to="/about">Follow Us!</FooterLink> */}
-                    </FooterLinkItems>
+                    
                 </FooterLinksWrapper>
             </FooterLinksContainer>
             <SocialMedia>
@@ -41,7 +34,7 @@ const Footer = () => {
                     <WebsiteRights>Ricci's Sausage Co © {new Date().getFullYear()} All Rights Reserved.</WebsiteRights>
                     <SocialIcons>
                         <SocialIconLink href='/' target="_blank" aria-label="Facebook">
-                            <FaInstagram />
+                            {/* <FaInstagram /> */}
                         </SocialIconLink>
                     </SocialIcons>
                 </SocialMediaWrap>
